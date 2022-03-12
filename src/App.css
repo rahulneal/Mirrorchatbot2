@@ -13,18 +13,19 @@
   }
 }
 
-.App-header {
+.main {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
+  position: relative;
 }
 
-.App-link {
+.main{
   color: #61dafb;
 }
 
@@ -35,4 +36,66 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.chatbox__container{
+  background-color: #f1f1f1;
+  height: 75vh;
+  width: 25%;
+  position: absolute;
+  right: 5%;
+  bottom: 2%;
+  border-radius: 5px;
+  
+
+
+}
+
+.header__logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 1;
+  border-bottom:1px solid #61dafb ;
+    
+}
+
+.header__logo img{
+  padding: 5px;
+  width: 34px;
+  height: 34px;
+ 
+
+}
+
+h3{
+  color: #61dafb;
+}
+
+.input__bar{
+  position: absolute;
+  left: 2%;
+  bottom: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.input__bar input{
+  
+  max-width: auto;
+  border-radius: 5px;
+  border: 1px solid #61dafb;
+  
+
+}
+
+.input__bar button{
+  border: 1px solid #61dafb; 
+  background-color: #61dafb;
+  padding: 3%;
+  border-radius: 100%;
+  margin: 0% 5%;
+
 }
